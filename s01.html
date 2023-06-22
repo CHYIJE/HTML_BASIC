@@ -1,0 +1,28 @@
+<!-- css 적용 방법 -->
+<!-- 대상이 되는 태그명이나 선택지를 적고 -->
+<!-- 중괄호 사이에 스타일 속성을 적어 준다 -->
+<!-- 스타일 속성 및 속성값 뒤에는 꼭 세미콜론을 붙인다 -->
+
+<style>
+    h2 {   
+        color:blueviolet;
+        background-color: burlywood;
+        cursor: pointer;
+        text-align: center;
+    }
+</style>
+
+<!-- 꺾쇠 사이에 태그명을 적는다. ctrl + /  -->
+<!-- 태그는 앞뒤로 꺽쇠 사이에 태그명을 적고  -->
+<!-- 뒤에는 /를 넣어준다 -->
+<!-- 태그 사이에는 문서 내용이 들어간다  -->
+
+<h1>이젠 안녕</h1>
+
+<h2 onclick="test()">안녕은 영원한 헤어짐은 아니겠지요</h2>
+
+<script>
+    const test = () =>  alert("사퇴하세요!!!");
+    const test1 = () => alert("나 말고 딴거");
+</script>
+
