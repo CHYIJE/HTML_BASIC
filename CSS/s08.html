@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .ib{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: coral;
+        }
+
+        .second{
+            
+            position: relative;
+            top: 25px;
+            left: 25px;
+            background-color: blue;  */
+
+        }
+
+        .third{
+            position: absolute;
+            background-color: yellow;
+            top: 0px;
+            left: 0px;
+        }
+
+        .first {
+            position: relative;
+            z-index: 1;
+        } 
+        
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="ib first">1</div>
+    <div class="ib second">2</div>
+    <div class="ib third">3</div>
+    <div class="ib">4</div>
+</body>
+</html>
