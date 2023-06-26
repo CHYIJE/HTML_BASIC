@@ -1,0 +1,47 @@
+.container {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    display: flex;          /* 플렉스 */
+    height: 500px;
+    flex-direction: row;    /* 축 지정 */
+
+    /* content는 여러 줄에 대한 설정 */
+    justify-content: space-evenly; /* 정렬된 방향 기준으로 여백을 어떻게 할 것인가 3가지 */
+    /* items는 한 줄에 대한 설정 */
+    align-items: flex-start; /*  정렬된 방향의 크로스 방향으로 여백을 어떻게 할 것인가 */
+    flex-wrap: wrap; /* 요소들을 정렬하는 기능 */
+}
+
+
+.item1{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    
+    
+}
+
+.item2{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    order: 1;  /* 순서 정하기 기본적으로 0으로 지정됨 */
+}
+
+.item3{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+   
+    /* align-self: self-start; */  /* 따로 */
+}
