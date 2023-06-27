@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .center-cover-img{
+            background-attachment: fixed;
+            background-position: center;
+            background-size:contain;
+            
+        }
+
+        
+        /* 각 영역 보이기 */
+           /* section, div {
+            border: 1px solid red;
+        } */
+          
+        .logo{
+            display: flex;
+            background-color: rgb(48, 46, 46);
+            justify-content: space-between;
+            
+            border-radius: 10px;
+            column-gap: 5px;
+        }
+
+      
+
+        
+
+
+        .nav{
+            
+            display: flex;
+            column-gap: 135px;
+            height: 50px;
+            background-color: rgb(70, 69, 69);
+            width: 1000px;
+            
+            border-radius: 4px;
+        }
+
+        .nav ul{
+            align-items: center;
+            list-style-type: none;
+            display: flex;
+            column-gap: 40px;
+            font-size: 17px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            
+          
+        }
+
+        .main{
+            height: 1024px;
+            background-color: black;
+            margin: auto;
+            order: -2;
+               
+        }
+
+        .container{
+            max-width: 1024px;
+            height: 100%;
+            margin: auto;
+        }
+        
+
+        .wander {
+            display: flex;
+            justify-content:center;
+        }
+            
+        .wander-img{
+            width: 700px;
+            height: 800px;
+            background-image: url('./diaimg/dark-wanderer-bg-xl.jpg');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+        }
+        
+
+        .upbuy {
+            background-color: rgb(138, 0, 0);
+            color: white;
+            border: solid 2px rgb(138, 0, 0);
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        
+        .downbuy{
+            display: flex;
+            justify-content: center;
+            background-image: url(./diaimg/btn-primary-sheet-sm.jpg);
+            color: rgb(189, 138, 90);
+            padding: 15px 160px;
+            font-size: 25px;
+            margin:  0 auto;
+            margin-bottom: 170px;
+            /* margin: auto; */
+            
+            
+            
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="main center-cover-img">
+       
+            <div class="container">
+                <div class="logo">
+                    <img src="./diaimg/blizz_blue_logo.png" height="50px" alt="로고">
+                   
+                    <div class="nav">
+                        <ul>
+                            <li><img src="./diaimg/diablo-II.webp" height="50px" alt=""></li>
+                            <li>개요</li>
+                            <li>새소식</li>
+                            <li>자료실</li>
+                            <li>직업</li>
+                            <li>주요 콘텐츠</li>
+                            <li >토론장 <img src="./diaimg/arrow-up-right.svg" height="15" alt=""></li>
+                        </ul>
+                        <ul>
+                            <li> 
+                                <img src="./diaimg/user.svg" height="15" alt="">계정
+                            </li>
+                            <li>
+                                <button class="upbuy">구매하기</button>
+                            </li>
+                        </ul>
+                                   
+                    </div>
+                    
+                </div>
+                <div>
+                        <div>
+                            <div class="wander">
+                                <!-- <img src="./diaimg/dark-wanderer-bg-xl.jpg" height="500" alt=""> -->
+                                <div class="wander-img">
+                                    <button class="downbuy">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>       
+            </div>
+            
+              
+        
+        </section>
+   
+</body>
+</html>
